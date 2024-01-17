@@ -4,7 +4,7 @@ function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
-  function handleInputChang(e) {
+  function handleInputChange(e) {
     setNewTask(e.target.value);
   }
   function addTask() {
@@ -49,7 +49,7 @@ function TodoList() {
             type="text"
             placeholder="enter a task .. "
             value={newTask}
-            onChange={handleInputChang}
+            onChange={handleInputChange}
           />
           <button className="add-btn" onClick={addTask}>
             Add
